@@ -12,6 +12,7 @@ public class rec6 {
                 }
                 else{
                     start++;
+
                     e--;
                 }
             }

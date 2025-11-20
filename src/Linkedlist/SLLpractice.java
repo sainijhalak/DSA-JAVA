@@ -30,14 +30,15 @@ public class SLLpractice {
                 temp=temp.next;
             }
         }
-        void size() {
+        int size() {
             Node c=head;
             int count=0;
             while(c!=null){
                 count++;
                 c=c.next;
             }
-            System.out.println(count);
+
+            return count;
         }
         void insertAtBeg(int data){
             Node n=new Node(data);
@@ -51,10 +52,12 @@ public class SLLpractice {
             }
         }
         void insertAtPos(int data,int pos){
+            int co=size();
             if(head==null){
                 insertAtEnd(data);
-            }
-            else{
+            } else if (pos>co|| pos<0) {
+                System.out.println("kya be!");
+            } else{
                 Node n=new Node( data);
                 int i=1;
                 Node temp=head;
@@ -87,7 +90,15 @@ public class SLLpractice {
         l.insertAtBeg(12);
         l.display();
         System.out.println();
-        l.insertAtPos(20,2);
+        l.insertAtPos(20,6);
         l.display();
+        System.out.println();
+        System.out.println(l.tail.data);
+        System.out.println();
+        System.out.println(l.head.data);
+        System.out.println();
+        l.insertAtPos(20,10);
+
+
     }
 }

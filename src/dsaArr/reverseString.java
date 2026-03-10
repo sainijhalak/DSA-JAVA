@@ -2,7 +2,7 @@ package dsaArr;
 
 public class reverseString {
     public static StringBuilder sR(StringBuilder sb, int low, int high){
-        if(sb.length()==0 || sb.length()==1) {
+        if(low>=high) {
             return  sb;
         }
         char temp=sb.charAt(low);
@@ -15,7 +15,8 @@ public class reverseString {
         int low=0;
         int high=s.length()-1;
         StringBuilder sb=new StringBuilder(s);
-        String ans=sR(sb,low,high);
+        StringBuilder ans = sR(sb,low,high);
+
         System.out.println(ans);
 
     }

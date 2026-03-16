@@ -51,7 +51,7 @@ nthLevel(root.right,n-1);
             b.right = f;
 
             int h = height(root);
-          for(int i=0;i<=h;i++){
+          for(int i=1;i<=h;i++){
               nthLevel(root,i);
               System.out.println();
           }

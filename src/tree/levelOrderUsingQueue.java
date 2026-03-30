@@ -27,6 +27,7 @@ public class levelOrderUsingQueue {
                 System.out.print(cur.val);
                 if(cur.left!=null) q.add(cur.left);
                 if(cur.right!=null) q.add(cur.right);
+                
             }
 
         }

@@ -18,9 +18,10 @@ public class consecutiveOddEven {
             else{
 
                 max=Math.max(max,count);
-                count=0;
+                count=1;
             }
         }
+        max=Math.max(max,count);
         System.out.println(max);
     }
 }

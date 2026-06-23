@@ -28,7 +28,16 @@ public static class Node{
     }
 
 }
-
+//    static int ans;
+//public static void mid(Node head){
+//        Node slow=head;
+//        Node fast=head;
+//        while(fast!=null && fast.next!=null){
+//            slow=slow.next;
+//            fast=fast.next.next;
+//        }
+//        ans=slow.data;
+//}
     public static void main(String[] args) {
         Node a = new Node(5);
         Node b = new Node(3);
@@ -42,7 +51,10 @@ public static class Node{
         d.next = e;
         Node head=a;
         int count=1;
-        displayr(head,count);
+
+//        mid(head);
+//        System.out.println(ans);
+//        displayr(head,count);
 
 
 
